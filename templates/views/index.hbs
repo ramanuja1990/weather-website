@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Test Title</title>
+        <link rel="icon" href="/img/weather.png" />
+        <link rel="stylesheet" href="./css/styles.css" />
+        
+    </head>
+    <body>
+        <div class="main-content">
+            {{>header}}
+            <p>Get the latest weather of your place</p>
+            <form>
+                <input type="text" placeholder="Location" name="address"/>
+                <button type="submit">Search</button>
+            </form>
+
+            <p id="messageOne"></p>
+            <p id="messageTwo"></p>
+        </div>
+        {{>footer}}
+
+        <script src="./js/app.js"></script>
+    </body>
+</html>
